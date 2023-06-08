@@ -1,0 +1,326 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.madera{
+  background-image: url('images/madera.jpg');
+  background-repeat: repeat;
+}
+
+/* Estilos de la página de introducción del blog */
+.introduction {
+  padding: 50px 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.introduction h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.introduction p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Estilos de la sección de publicaciones del blog */
+.blog {
+  padding: 50px 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+.blog h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.blog .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+blog .blog-title {
+  text-align: center; /* Alineación centrada */
+}
+
+.blog .post-container {
+  display: flex;
+  width: 100%;
+}
+
+.blog .post {
+  flex-basis: calc(50% - 20px);
+  margin-right: 40px;
+}
+
+.blog .post:last-child {
+  margin-right: 0;
+}
+
+/* Resto de estilos del encabezado, pie de página y otros elementos */
+
+
+.post {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.post-image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.post-content {
+  flex-grow: 1;
+}
+
+.post-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.post-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para los artículos del blog */
+.post:nth-child(odd) .post-content {
+  float: left;
+}
+
+.post:nth-child(even) .post-content {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.article-image {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.article-text {
+  text-align: left;
+  position: relative;
+}
+
+.article h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.article p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.article-top {
+  margin-bottom: 20px;
+}
+
+.article-bottom {
+  margin-top: 20px;
+}
+
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos para el contenido principal */
+main {
+  padding: 40px 0;
+}
+
+.hero {
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-info {
+  max-width: 400px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.hero-image img {
+  max-width: 300px;
+  height: auto;
+  margin-left: 40px;
+}
+
+.blog-posts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post {
+  width: calc(50% - 20px);
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.post h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.post p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  width: auto; /* Asegura que el ancho se ajuste automáticamente al contenido */
+  height: 40px; /* Ajusta la altura según tus preferencias */
+  line-height: 20px; /* Alinea verticalmente el texto en el centro */
+  border-radius: 10px;
+  margin-bottom: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #555;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links li {
+  margin: 0 5px;
+}
+
+.social-links li a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-links li a:hover {
+  color
+}
